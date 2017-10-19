@@ -13,4 +13,18 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('formulario');
 	}
+	//esta funcion es la que recibe los datos
+	function guardar($data)
+	{
+		$query = $this->db->insert('usuarios', array('nombre'=>$data['elda'], 'apellido'=>$data['solar'],'Direccion de Email'=>$data['elisa'], 'Next'=>$data['listo']));
+
+		if ($this->db->affected_rows() > 0) 
+		{
+			echo "Guardados con éxito";
+		}
+		else
+		{
+			echo "Algo salio mal";
+		}
+	}
 }
