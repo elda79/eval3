@@ -14,8 +14,14 @@ class Welcome extends CI_Controller {
 		$this->load->view('formulario');
 	}
 	
-	 
-		}
+	function validar()
+	{
+		$name=Sthis-> input->post("elda");
+        $Apellido=Sthis-> input->post("solar");
+        $correo=Sthis-> input->post("elisa");
+        echo "Elda:".$name."Solar"$Apellido."Elisa"$correo;
+				}
+	}
 	}
 
 }
