@@ -21,9 +21,12 @@ class Welcome extends CI_Controller {
         $Apellido=Sthis-> input->post("solar");
         $correo=Sthis-> input->post("elisa");
         echo "Elda:".$name."Solar"$Apellido."Elisa"$correo;
-				}
+				
 
-  $data=array('elda'->=$this->post('name'),'solar'->=$this->post('Apellido'),'elisa'->=$this->post('correo'));		
+  $data=array('elda'->=$this->post('name'),'solar'->=$this->post('Apellido'),'elisa'->=$this->post('correo'));
+   }
+   	}
+   		
 
-}
+
 ?>
