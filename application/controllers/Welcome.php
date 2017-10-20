@@ -3,10 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
 
-	function __construct(){
+	function __construct()
+	{
 		parent::__construct();
 		$this->load->helper('form');
-		$this->load->model('form_model');  
+		//$this->load->model('form_model');  
 	}
 
 	public function index()
@@ -21,7 +22,8 @@ class Welcome extends CI_Controller {
         $correo=Sthis-> input->post("elisa");
         echo "Elda:".$name."Solar"$Apellido."Elisa"$correo;
 				}
-	}
-	}
+
+  $data=array('elda'->=$this->post('name'),'solar'->=$this->post('Apellido'),'elisa'->=$this->post('correo'));		
 
 }
+?>
